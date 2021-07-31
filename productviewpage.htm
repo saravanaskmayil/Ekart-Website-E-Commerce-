@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="e-commerece.css">
+    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="productviewpage.css">
+   
+
+    <!-- <link rel="stylesheet" href="products-details.css"> -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!---------------------------------BOOTSTRAP CDN FOR FONT AWESOME----------------------------------------------------------->
+    <script src="e-commerece.js">
+    </script>
+    <script src="productviewpage.js">
+
+    </script>
+    <title>Products view Page</title>
+</head>
+<body>
+    <!-- <div style="width:100vw; background-color: brown; height: 20px;">
+    </div> -->
+
+    <!------------------------Navbar in top--------------------------->
+    <!--1--------------using container for total first part of in landing page--->
+    <!---1.nabar la box la oru logo 
+        2.anchor use panni list -->
+    
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo"> 
+                <img src="EKART-LOGO.png" class="ekart-logo" width="125px" height="auto">
+            </div>
+            <nav> 
+                <ul id="MenuItems">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Account</a></li>
+                  
+                </ul>
+            </nav>
+            <img src="images/cart.png" alt="cart" width="30px" height="30px">
+            <img src="images/menu.png" alt="menu-icon" class="menu-icon" 
+            onclick="menutoggle( )">
+        </div>
+        <!---2--------------------.row  nu oru container la 2 div tag-----------------
+           (1)--col nu oru div for heading + content
+            (2)--football png pht ku oru div tag ----------------------------------->
+    </div>
+
+<!-----------------------Feature Categories--------------------->
+<!---3--------------categories nu div tag la margin top 70px kudu next page ku down pannirukan
+                   (1)----athu la 1-div tag row nu 3 images add pannirukan -->
+
+
+
+    <!------------------------Features Products---------------------------------------------->
+
+        <!-- <div class="row row-2"> -->
+            <!-- <h2>All Products</h2>
+            <select>
+                <option>Default Sorting</option>
+                <option>Sort by Price</option>
+                <option>Sort by Popularity</option>
+                <option>Sort by Rating</option>
+                <option>Sort by Sale</option>
+            </select>
+        </div> -->
+
+
+        <!------------------------------Single Product details---------------------------------->
+
+
+<div class="small-container single-product">
+    <div class="row">
+        <div class="col-2">
+            <img  id="productimgview" src="images/gallery-1.jpg" width="100%">
+
+            <!-----------------------------small images --------------------------->
+
+
+            <div class="small-img-row">
+                <div class="small-img-col">
+                    <img  class="small-img img1"src="images/gallery-1.jpg" width="80%">
+                </div>
+                <div class="small-img-col">
+                    <img  class="small-img img2" src="images/gallery-2.jpg" width="80%">
+                </div>
+                <div class="small-img-col">
+                    <img class="small-img img3" src="images/gallery-3.jpg" width="80%">
+                </div>
+                <div class="small-img-col">
+                    <img class="small-img img4" src="images/gallery-4.jpg" width="80%">
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <p>Home / T-shirt</p>
+            <h1>Red Printed T-shirt by HRX</h1>
+            <h4>500RS</h4>
+            <select>
+                <option>Select Size</option> 
+            <option>XXL</option>
+            <option>XL</option>
+            <option>Large</option>
+            <option>Medium</option>
+            <option>Small</option>
+        </select>
+        <input class="inputboxcount" type="number" value="1">
+        <a href="#" class="btn">Add To Cart</a>
+
+        <h3>Product Details <i class="fa fa-indent"></i></h3>
+        <p class="productparaview">Give your summer wardrobe a style upgrade with the HRX 
+         Men's Active T-shirt.Team it with a pair of shorts for your morning <br>workouts or a denims for an evening out with the guys.</p>
+        </div>
+    </div>
+</div>
+
+<!-------------title------------------------>
+<div class="small-container">
+    <div class="row row-2">
+     <h2 class="related-head2">Related Products</h2>  
+     <p class="related-para">View More</p> 
+    </div>
+</div>
+
+     <!---------------------products-------------->    
+    <div class="small-container">
+    <div class="row">
+        <div class="col-4">
+            <img class="product-1" src="images/product-7.jpg" alt="product-shirt">
+            <h4>Red Printed T-Shirt</h4>
+            <div class="rating">
+                <i class="fa fa-star"  ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-o" ></i>
+            </div>
+            <p>500RS</p>
+        </div>
+        <div class="col-4">
+            <img class="product-1" src="images/product-8.jpg" alt="product-shirt">
+            <h4>Red Printed T-Shirt</h4>
+            <div class="rating">
+                <i class="fa fa-star"  ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-o" ></i>
+            </div>
+            <p>500RS</p>
+        </div>
+        <div class="col-4">
+            <img class="product-1" src="images/product-9.jpg" alt="product-shirt">
+            <h4>Red Printed T-Shirt</h4>
+            <div class="rating">
+                <i class="fa fa-star"  ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-o" ></i>
+            </div>
+            <p>500RS</p>
+        </div>
+        <div class="col-4">
+            <img class="product-1" src="images/product-10.jpg" alt="product-shirt">
+            <h4>Red Printed T-Shirt</h4>
+            <div class="rating">
+                <i class="fa fa-star"  ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-o" ></i>
+            </div>
+            <p>500RS</p>
+        </div>
+        <div class="col-4">
+            <img class="product-1" src="images/product-11.jpg" alt="product-shirt">
+            <h4>Red Printed T-Shirt</h4>
+            <div class="rating">
+                <i class="fa fa-star"  ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-o" ></i>
+            </div>
+            <p>500RS</p>
+        </div>
+        <div class="col-4">
+            <img class="product-1" src="images/product-12.jpg" alt="product-shirt">
+            <h4>Red Printed T-Shirt</h4>
+            <div class="rating">
+                <i class="fa fa-star"  ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-o" ></i>
+            </div>
+            <p>500RS</p>
+        </div>
+    </div>
+    <div class="page-btn">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>&#8594;</span>
+    </div>
+</div>
+
+
+    <!-------------------------------------------Latest Products------------------------------------------------------->
+    <!-- <h2 class="title">Latest Products</h2>
+    <div class="row">
+        <div class="col-4">
+            <img class="product-1" src="images/product-7.jpg" alt="product-shirt">
+            <h4>Red Printed T-Shirt</h4>
+            <div class="rating">
+                <i class="fa fa-star"  ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-o" ></i>
+            </div>
+            <p>500RS</p>
+        </div>
+        <div class="col-4">
+            <img class="product-1" src="images/product-8.jpg" alt="product-shirt">
+            <h4>Red Printed T-Shirt</h4>
+            <div class="rating">
+                <i class="fa fa-star"  ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-o" ></i>
+            </div>
+            <p>500RS</p>
+        </div>
+        <div class="col-4">
+            <img class="product-1" src="images/product-9.jpg" alt="product-shirt">
+            <h4>Red Printed T-Shirt</h4>
+            <div class="rating">
+                <i class="fa fa-star"  ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-o" ></i>
+            </div>
+            <p>500RS</p>
+        </div>
+        <div class="col-4">
+            <img class="product-1" src="images/product-10.jpg" alt="product-shirt">
+            <h4>Red Printed T-Shirt</h4>
+            <div class="rating">
+                <i class="fa fa-star"  ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-o" ></i>
+            </div>
+            <p>500RS</p>
+        </div>
+        <div class="col-4">
+            <img class="product-1" src="images/product-11.jpg" alt="product-shirt">
+            <h4>Red Printed T-Shirt</h4>
+            <div class="rating">
+                <i class="fa fa-star"  ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-o" ></i>
+            </div>
+            <p>500RS</p>
+        </div>
+        <div class="col-4">
+            <img class="product-1" src="images/product-12.jpg" alt="product-shirt">
+            <h4>Red Printed T-Shirt</h4>
+            <div class="rating">
+                <i class="fa fa-star"  ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-o" ></i>
+            </div>
+            <p>500RS</p>
+        </div>
+    </div>
+</div> -->
+
+<!-- -----------------------------offer Zone----------------------- -->
+<!-- <div class="offer">
+    <div class="small-container">
+        <div class="row"> -->
+            <!-- <div class="col-2">
+                <img  src="images/exclusive.png" class="offer-img">
+            </div>
+            <div class="col-2">
+                <p>Exclusively Available on RedStore</p>
+                <h1>Smart Band 4</h1>
+                <small>
+                    The Mi Smart Band 4 features a 39.9% larger (than Mi Band 3) Amoled color <br>full-touch display with adjustable brightness,so everythings is clear as can be.
+                </small>
+                <a href="" class="btn">Buy Now &#8594;</a>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<!------------------------------testimonial------------------------>
+ <!-- <div class="testimonial">
+     <div class="small-container">
+         <div class="row">
+             <div class="col-3">
+                <i class="fa fa-quote-left"  ></i>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni beatae quae porro numquam explicabo error delectus aliquid consequuntur, itaque sed?</p>
+                 <div class="rating">
+                    <i class="fa fa-star"  ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star-o" ></i>
+                </div>
+                <img src="./images/user-1.png">
+                <h3>Sean Parker</h3>
+              </div>
+              <div class="col-3">
+                <i class="fa fa-quote-left"  ></i>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni beatae quae porro numquam explicabo error delectus aliquid consequuntur, itaque sed?</p>
+                 <div class="rating">
+                    <i class="fa fa-star"  ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star-o" ></i>
+                </div>
+                <img src="./images/user-2.png">
+                <h3>Mike Smith</h3> -->
+              <!-- </div>
+              <div class="col-3">
+                <i class="fa fa-quote-left"  ></i>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni beatae quae porro numquam explicabo error delectus aliquid consequuntur, itaque sed?</p>
+                 <div class="rating">
+                    <i class="fa fa-star"  ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star-o" ></i>
+                </div>
+                <img src="./images/user-3.png">
+                <h3>Mabel Joe</h3> -->
+                <!-- <div class="col-3">
+                    <i class="fa fa-quote-left"  ></i>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni beatae quae porro numquam explicabo error delectus aliquid consequuntur, itaque sed?</p>
+                     <div class="rating">
+                        <i class="fa fa-star"  ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star-o" ></i>
+                    </div>
+                    <img src="./images/user-4.png">
+                    <h3>Mabel Joe</h3> -->
+              <!-- </div>
+         </div>
+     </div>
+ </div> -->
+
+ <!-----------------------------------Brands---------------------------------->
+    <!-- <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img  class="brandimg" src="images/logo-godrej.png" alt="godrej">
+                </div>
+                <div class="col-5">
+                    <img   class="brandimg" src="images/logo-oppo.png" alt="oppo">
+                </div>
+                <div class="col-5">
+                    <img  class="brandimg" src="images/logo-coca-cola.png" alt="coca-cola">
+                </div>
+                <div class="col-5">
+                    <img class="brandimg"  src="images/logo-paypal.png" alt="paypal">
+                </div>
+                <div class="col-5">
+                    <img class="brandimg" src="images/logo-philips.png" alt="philips">
+                </div>
+            </div>
+        </div>
+    </div> -->
+     <!---------------------------footer------------------------>
+
+     <div class="footer">
+         <div class="container">
+             <div class="row">
+                 <div class="footer-col-1">
+                     <h3 class="app-logo-header">Download Our App</h3>
+                     <p>Download App for Android and ios mobile phone.</p>
+                     <div class="app-logo">
+                         <img src="images/play-store.png">
+                         <img src="images/app-store.png">
+                     </div>
+                 </div>
+                 <div class="footer-col-2">
+                 <img src="EKART-LOGO.png" alt="EKART-LOGO" class="ekart-logo-footer" width="290px" height="70px">
+                    <p>Our Purpose is to sustainably make the pleasure and Benefits of sports accessibrl to the many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3 class="useful"> &ensp;&ensp;&ensp;&ensp;&ensp;Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affilicate</li>
+                    </ul>  
+                </div>
+                <div class="footer-col-4">
+                    <h3 class="useful"> &ensp;&ensp;&ensp;&ensp;Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube </li>
+                    </ul>  
+                </div>
+             </div>
+         </div>
+     </div>
+<!---------------js for product gallery---------->
+
+<script>
+    var ProductImg = document.getElementById("productimgview");
+    var SmallImg = document.getElementsByClassName("small-img");
+
+SmallImg[0].onclick = function(){
+    ProductImg.src = SmallImg[0].src ;
+}
+SmallImg[1].onclick = function(){
+    ProductImg.src = SmallImg[1].src;
+}
+SmallImg[2].onclick = function(){
+    ProductImg.src = SmallImg[2].src;
+}
+SmallImg[3].onclick = function(){
+    ProductImg.src = SmallImg[3].src;
+}
+</script>
+</body>
+</html>

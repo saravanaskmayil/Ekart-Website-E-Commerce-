@@ -1,0 +1,407 @@
+body{
+    margin:0;
+    padding:0;
+    /* background-color: dodgerblue; */
+    /* width: 100%;  */
+     /* height:100%; */
+     box-sizing: border-box;
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* width:100vw or 100% */
+/* height:100vh or 100%; parent 100 px */
+
+
+
+
+.ekart-logo{
+    /* padding:0.1rem ; */
+    margin-left: 15px;
+
+}
+
+/* ...........navbar to align in row direction............ */
+.navbar{
+    /* width: ;
+    height: 9vh; */
+    display:flex;
+    align-items: center;
+    /* padding:0.3rem; */
+    padding:20px;
+}
+/* .navbar nav{
+    margin-top: 2rem;
+    flex:1;
+    text-align: right;
+    text-decoration: none;
+} */
+
+.menu-icon{
+    width: 28px;
+    margin-left: 23px;
+    margin-top: 6px;
+    display: none;
+}
+
+nav{
+    flex:1;
+    text-align: right;
+}
+nav ul{
+    display:inline-block;
+    list-style-type: none;
+
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: #555;
+    cursor: pointer;
+}
+p{
+    color:#555;
+}
+
+.container{
+    /* width:95.5vw; */
+    /* height: 100vh; */
+    /* margin:auto;
+    padding:0 25px; */
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 25px;
+}
+.row{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    margin-top: 10px;
+}
+#box{
+    margin:55px;
+}
+
+.col-2{
+    flex-basis:50%;
+    width: 200px;
+}
+/* .col-2 img{
+    width:50%;
+    padding:50px;
+} */
+.col-head{
+    /* font-weight: 900; */
+    font-size:3rem;
+    line-height:2.7rem ;
+    margin:25px 0;
+    /* text-transform: capitalize; */
+
+}
+.col-para{
+    font-size: 1rem;
+}
+
+.image-football{
+    width:43rem;
+    /* height:40rem; */
+    height:35rem;
+    padding: 0px;
+    margin-bottom: 30px;
+
+}
+.btn{
+    display: inline-block;
+    font-size: 18px;
+    background: rgb(194, 89, 20);
+    color:rgb(0, 0, 0);
+    padding:8px 30px;
+    margin:20px 0;
+    border-radius: 50px;
+    opacity: 1;
+    box-shadow: 1px 1px 0px 4px rgb(0, 0, 0);
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: rgb(255, 102, 0);
+    color:black;
+    box-shadow: 1px 1px 0px 4px rgb(191, 194, 192);
+    
+
+}
+
+/* .btn:focus{
+    opacity:0.6;
+} */
+
+.header{
+    background:radial-gradient(rgb(255, 255, 255),#eed6d6);
+}
+.header .row{
+    margin:55px;
+}
+
+.categories{
+    margin:70px 0;
+}
+.col-3{
+    flex-basis: 30%;
+    width: 250px;
+    margin-bottom: 30px;
+}
+.col-3 img{
+    width: 100%;
+}
+
+.small-container{
+    width: 1000px;
+    margin:auto;
+    padding:0px 25px;
+}
+
+.col-4{
+    flex-basis: 25%;
+    padding:10px;
+    width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+    /* flex-wrap: wrap; */
+}
+.col-4 img{
+    width: 100%;
+
+}
+.title{
+    text-align: center;
+    margin: 0 auto  80px;
+    position: relative;
+    line-height: 60px;
+    color:#555;
+    font-size: xx-large;
+}
+
+.title:after{
+    content: " ";
+    background-color: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius:5px;
+    position: absolute;
+    bottom: 0;
+    left: 46%;
+    transform: rotateX(-50%);
+}
+
+.col-4 h4{
+    color: #555;
+    font-weight: normal;
+    /* font-weight: bolder; */
+}
+
+.col-4 p{
+    font-size: 14px;
+}
+
+.rating .fa{
+    color: #ff523b;
+}
+
+.col-4:hover{
+  transform: translateY(-5px);  
+}
+
+.offer{
+    background:radial-gradient(#fff,#eed6d6);
+    margin-top: 80px;
+    padding:30px 0;
+}
+.col-2 .offer-img{
+    width: 500px;
+    height: 400px;
+    padding:  10px;
+    /* padding-right: 10px; */
+}
+small{
+    color: #555;
+}
+
+/* ------------testimonial----------- */
+
+.testimonial {
+    padding-top:100px;
+
+}
+
+.testimonial .col-3{
+    text-align:center;
+    padding:40px 10px;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+
+}
+.testimonial .col-3 img{
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.testimonial .col-3:hover{
+transform: translateY(-10px);
+}
+.fa.fa-quote-left{
+    font-size: 34px;
+    color:#ff523b;
+}
+
+.col-3 p{
+    font-size: 14px;
+    margin:12px 0;
+    color:#777;
+}
+
+.testimonial .col-3 h3{
+    font-weight: 600;
+    color:#555;
+    font-size: 16px;
+}
+
+/* ---------------------brands----------------- */
+.brands{
+    margin:100px auto;
+
+}
+.col-5{
+    width: 160px;
+}
+
+.brandimg{
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);      
+    /* it will filter the color from different color to grayscale */
+}
+.brandimg:hover{
+    filter: grayscale(0);
+}
+
+/* -------------------footer------------------ */
+.footer{
+    background:#000;
+    color:white;
+    font-size:14px;
+    padding:40px 0 20px;
+}
+.footer p{
+    color:#8a8a8a;
+
+}
+.footer h3{
+    color:#fff;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.ekart-logo-footer{
+    width: 290px;
+    /* height: 90px; */
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.footer-col-1, 
+.footer-col-2,
+.footer-col-3,
+.footer-col-4{
+    width: 250px;
+    margin-bottom: 20px;
+
+}
+.footer-col-1{
+    flex-basis: 30%;
+    margin-left: 50px;
+
+}
+.footer-col-2{
+    flex:1;
+    text-align: center;
+    margin-right: 30px;
+
+}
+/* .footer-col-2 img{
+    width: 180px;
+} */
+
+.footer-col-3,
+.footer-col-4{
+    flex-basis: 18%;
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+}
+
+.useful{
+    font-size:medium;
+ font-weight: bolder;
+}
+
+
+.app-logo-header{
+    margin-right: 238px;
+}
+
+.app-logo{
+    margin-top: 20px;
+}
+
+.app-logo img{
+    width: 130px;
+}
+
+/* --------------------------Media query for menu--------------------------- */
+
+@media  only screen and (max-width:800px) {
+    
+    nav ul{
+        position: absolute;
+        top:70px;
+        left:0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom:10px;
+    }
+    nav ul li a{
+        color:white;
+    }
+    .menu-icon{
+        display: block;
+        cursor:pointer;
+    }
+}
+
+/* media query for less than 600 screen size */
+
+@media only screen and (max-width:600px){
+    .row{
+        text-align: center;
+
+    }
+    .col-2,
+    .col-3,
+    .col-4{
+        flex-basis: 100%;
+    }
+}
+
+
+
